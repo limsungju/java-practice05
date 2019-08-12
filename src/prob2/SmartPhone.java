@@ -4,15 +4,21 @@ public class SmartPhone extends MusicPhone {
 
 	@Override
 	public void execute(String function) {
-		if(function.equals("음악")) {
-			playMusic();
-			return;
-		} else if(function.equals("통화")) {
+//		if(function.equals("음악")) {
+//			playMusic();
+//			return;
+//		} else if(function.equals("통화")) {
+//			super.execute(function);
+//			return;
+//		} else if(function.equals("앱")) {
+//			app();
+//			return;
+//		}
+		
+		if (function.equals("앱")) {
+			this.app();
+		} else {
 			super.execute(function);
-			return;
-		} else if(function.equals("앱")) {
-			app();
-			return;
 		}
 	}
 	
